@@ -1,24 +1,72 @@
-# README
+#Airbnb_For_Dogs
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
 
-* Ruby version
+>Created on 01/08/2019 by Gaspard Tertrais.
 
-* System dependencies
 
-* Configuration
 
-* Database creation
+**Note aux correcteurs**
 
-* Database initialization
+My program is complete.
 
-* How to run the test suite
+To test the program please run :
+bundle install
+rails db:migrate
+rails db:seed
+rails c
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+## Content
 
-* ...
+
+
+- **db/seed** : Test and explaination
+- **db/migrate**: All the migrations
+- **app/models** : All the models
+- **Gemfile, Gemfile.lock** : Gem and dependencies. See below.
+
+
+
+## Classes
+
+
+
+Provides methods and variables to organize class process and its different phases.
+
+
+
+- # ApplicationRecord
+- # City
+- # Dog
+- # Comment
+- # Dogsitter
+- # Stroll
+
+
+
+## Gemfile
+
+
+
+```
+
+
+
+source 'https://rubygems.org'
+git_source(:github) { |repo| "https://github.com/#{repo}.git" }
+
+ruby '2.5.1'
+
+gem 'faker'
+gem 'table_print'
+
+
+gem 'rails', '~> 5.2.3'
+
+gem 'sqlite3'
+
+
+gem 'uglifier', '>= 1.3.0'
+
+
